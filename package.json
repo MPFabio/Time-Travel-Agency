@@ -1,0 +1,10 @@
+{
+  "name": "time-travel-agency",
+  "private": true,
+  "description": "Projet Time Travel Agency — Session 2 Webapp",
+  "scripts": {
+    "dev": "npm run dev --prefix webapp",
+    "build": "npm run build --prefix webapp",
+    "preview": "npm run preview --prefix webapp"
+  }
+}

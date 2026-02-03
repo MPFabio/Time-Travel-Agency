@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Time Travel Agency - thème dark luxe, accents dorés */
+:root {
+  font-family: "Cormorant Garamond", "Times New Roman", serif;
+  --bg-dark: #0c0a09;
+  --bg-card: #1c1917;
+  --gold: #d4af37;
+  --gold-light: #f0d78c;
+  --text: #fafaf9;
+  --text-muted: #a8a29e;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background-color: var(--bg-dark);
+  color: var(--text);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  min-height: 100vh;
+}
