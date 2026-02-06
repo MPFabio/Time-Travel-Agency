@@ -1,5 +1,7 @@
 # Time Travel Agency — Webapp
 
+**Membres du groupe :** Lenny COSTON, Sebastien GIGUET, Fabio MARATEA.
+
 La documentation complète (installation, déploiement, stack, crédits) est dans le **README à la racine du repo** : [../README.md](../README.md).
 
 - **Lancer en local :** `npm run dev` (depuis ce dossier) ou `npm run dev` depuis la racine.

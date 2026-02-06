@@ -18,9 +18,10 @@ export default function Footer() {
           <a href="#destinations" className="text-stone-400 hover:text-amber-400 transition-colors text-sm">Destinations</a>
           <a href="#quiz" className="text-stone-400 hover:text-amber-400 transition-colors text-sm">Quiz</a>
         </nav>
-        <p className="text-stone-500 text-sm text-center md:text-right">
-          Projet pédagogique — M1/M2 Digital & IA. Assets Session 1 (Livrables). IA : Mistral/Groq.
-        </p>
+        <div className="text-stone-500 text-sm text-center md:text-right">
+          <p className="mb-1">Projet pédagogique — M1/M2 Digital & IA. Assets Session 1 (Livrables). IA : Mistral/Groq.</p>
+          <p className="text-stone-400">Lenny COSTON · Sebastien GIGUET · Fabio MARATEA</p>
+        </div>
       </div>
     </motion.footer>
   )

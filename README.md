@@ -2,6 +2,8 @@
 
 Webapp pour une agence de voyage temporel fictive, créée dans le cadre du projet supervisé IA M1/M2 (Session 2). Landing page, galerie de destinations, chatbot IA et quiz de recommandation.
 
+**Membres du groupe :** Lenny COSTON, Sebastien GIGUET, Fabio MARATEA.
+
 ---
 
 ## Stack technique
@@ -68,6 +70,7 @@ Les prompts du chatbot et du quiz sont documentés dans [webapp/docs/prompts.md]
 
 ## Crédits
 
+- **Équipe :** Lenny COSTON, Sebastien GIGUET, Fabio MARATEA.
 - **Assets Session 1 :** dossier Livrables (images Paris 1889, Crétacé, Florence 1504 ; vidéos Tour_Eiffel, Dino, Florence, Montage_Transition ; documents PDF).
 - **APIs IA :** Groq, Mistral AI.
 - **Polices :** Google Fonts (Cormorant Garamond, Inter).
