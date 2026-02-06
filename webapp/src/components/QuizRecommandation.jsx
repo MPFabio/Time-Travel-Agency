@@ -85,9 +85,9 @@ export default function QuizRecommandation() {
       const dest = mapAnswersToDestination(next)
       setResult(dest)
       setLoading(true)
-      const apiKey = import.meta.env.VITE_GROQ_API_KEY || import.meta.env.VITE_MISTRAL_API_KEY
+      const apiKey = (import.meta.env.VITE_GROQ_API_KEY || import.meta.env.VITE_MISTRAL_API_KEY || '').trim()
       if (apiKey) {
-        const provider = import.meta.env.VITE_MISTRAL_API_KEY ? 'mistral' : 'groq'
+        const provider = (import.meta.env.VITE_MISTRAL_API_KEY || '').trim() ? 'mistral' : 'groq'
         const url = provider === 'mistral' ? 'https://api.mistral.ai/v1/chat/completions' : 'https://api.groq.com/openai/v1/chat/completions'
         const model = provider === 'mistral' ? 'mistral-small-latest' : 'llama-3.1-8b-instant'
         fetch(url, {

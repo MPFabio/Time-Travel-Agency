@@ -28,6 +28,7 @@ async function sendMessage(messages, apiKey, provider = 'groq') {
   })
   if (!res.ok) {
     const err = await res.text()
+    if (res.status === 401) throw new Error('Clé API invalide ou expirée. Vérifiez VITE_GROQ_API_KEY dans .env (et redémarrez npm run dev).')
     throw new Error(err || res.statusText)
   }
   const data = await res.json()
@@ -46,8 +47,8 @@ export default function ChatWidget() {
   const [error, setError] = useState(null)
   const listRef = useRef(null)
 
-  const apiKey = import.meta.env.VITE_GROQ_API_KEY || import.meta.env.VITE_MISTRAL_API_KEY
-  const provider = import.meta.env.VITE_MISTRAL_API_KEY ? 'mistral' : 'groq'
+  const apiKey = (import.meta.env.VITE_GROQ_API_KEY || import.meta.env.VITE_MISTRAL_API_KEY || '').trim()
+  const provider = (import.meta.env.VITE_MISTRAL_API_KEY || '').trim() ? 'mistral' : 'groq'
 
   useEffect(() => {
     if (listRef.current) listRef.current.scrollTop = listRef.current.scrollHeight
